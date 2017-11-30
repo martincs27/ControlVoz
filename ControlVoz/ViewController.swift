@@ -85,11 +85,12 @@ class ViewController: UIViewController {
     }
     
     func sendServer(comando: String){
-        Alamofire.request("https://controlvoz-martincs27.c9users.io/action/show").responseJSON{ response in
+        //del 2 al 9
+        Alamofire.request("10.200.175.136/?pin=2").responseJSON{ response in
             print("Result : \(response.result)")
-            if let json = response.result.value {
-                print("JSON: \(json)")
-            }
+            //if let json = response.result.value {
+              //  print("JSON: \(json)")
+            //}
         }
     }
 
